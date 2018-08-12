@@ -4,7 +4,8 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-
+const items = document.querySelectorAll('.item');
+const card = document.getElementsByClassName('.card');
 // Set Initial State Of Menu
 let showMenu = false;
 
@@ -29,5 +30,43 @@ function toggleMenu() {
 
     // Set Menu State
     showMenu = false;
+  }
+}
+var toggled = false
+function work(){
+  if(!toggled){
+    toggled = true;
+    document.getElementById('card').style.display = 'none';
+    return
+  }
+  if(toggled){
+    toggled = false;
+    document.getElementById('card').style.display = 'block'
+    return
+  }
+}
+
+function work1(){
+  if(!toggled){
+    toggled = true;
+    document.getElementById('card1').style.display = 'none';
+    return
+  }
+  if(toggled){
+    toggled = false;
+    document.getElementById('card1').style.display = 'block'
+    return
+  }
+}
+function work2(){
+  if(!toggled){
+    toggled = true;
+    document.getElementById('card2').style.display = 'none';
+    return
+  }
+  if(toggled){
+    toggled = false;
+    document.getElementById('card2').style.display = 'block'
+    return
   }
 }
