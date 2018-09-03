@@ -70,3 +70,27 @@ function work2(){
     return
   }
 }
+function work3(){
+  if(!toggled){
+    toggled = true;
+    document.getElementById('card3').style.display = 'none';
+    return
+  }
+  if(toggled){
+    toggled = false;
+    document.getElementById('card3').style.display = 'block'
+    return
+  }
+}
+function work4(){
+  if(!toggled){
+    toggled = true;
+    document.getElementById('card4').style.display = 'none';
+    return
+  }
+  if(toggled){
+    toggled = false;
+    document.getElementById('card4').style.display = 'block'
+    return
+  }
+}
